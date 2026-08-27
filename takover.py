@@ -12,7 +12,7 @@ import time
 import uuid
 
 # --- CONFIGURATION ---
-TARGET_DOMAIN = "mail.rangde.in"
+TARGET_DOMAIN = "example.com"
 # The exact name servers you are trying to match
 TARGET_NS = {
     # List of NS records
