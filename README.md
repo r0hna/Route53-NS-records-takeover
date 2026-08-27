@@ -56,7 +56,7 @@ Edit the two constants at the top of the script:
 ## Tool Output
 ```
 (.env) sh-5.3$ python takeover.py 
-[*] Starting takeover simulation for example.in...
+[*] Starting takeover simulation for example.com...
 [*] Target Name Servers: {'ns-1361.awsdns-42.org.', 'ns-775.awsdns-32.net.', 'ns-1855.awsdns-39.co.uk.'}
 
 [-] Attempt 1: No match. Assigned: ['ns-991.awsdns-59.net', 'ns-385.awsdns-48.com']... Deleting zone.
